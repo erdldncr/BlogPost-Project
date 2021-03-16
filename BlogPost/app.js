@@ -32,9 +32,9 @@ app.get('/compose',function(req,res){
   res.render('compose');
 });
 
-app.post('/',(req,res)=>{
-    let newPost=req.body.newPost
-    console.log(newPost)
+app.post('/compose',(req,res)=>{
+    
+    console.log(req.body.newPost)
 
 })
 
