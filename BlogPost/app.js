@@ -33,8 +33,8 @@ app.get('/compose',function(req,res){
 });
 
 app.post('/compose',(req,res)=>{
-    
-    console.log(req.body.newPost)
+    const post ={postTitle:req.body.postTitle,content:req.body.postBody}
+    console.log(post)
 
 })
 
