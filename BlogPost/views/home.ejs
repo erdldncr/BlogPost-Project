@@ -4,4 +4,15 @@
 
 <p><%= startingContent %> </p>
 
+<% if(posts.length!=0){ %>
+    <%  posts.forEach(post=>{ %>
+        <h1><%=post.title%> </h1>
+        <p>
+            <%=post.content.slice(0,100) %>
+        <a href='/posts/<%= post.title%>' >...for more deatils</a> 
+    </p>
+        <% }) %>
+        <% } %>
+
+
 <%-include('partials/footer')-%>
